@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^snippets3/', include('snippet3.urls')),
     url(r'^snippets4/', include('snippet4.urls')),
     url(r'^snippets5/', include('snippet5.urls')),
+    url(r'^snippets6/', include('snippet6.urls')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

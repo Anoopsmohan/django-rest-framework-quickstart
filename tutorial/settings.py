@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'snippet3.apps.Snippet3Config',
     'snippet4.apps.Snippet4Config',
     'snippet5.apps.Snippet5Config',
+    'snippet6.apps.Snippet6Config',
 ]
 
 MIDDLEWARE_CLASSES = [
