@@ -17,17 +17,20 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
 from quickstart import views
+from snippet5.views import api_root
 
-router = routers.DefaultRouter()
-router.register(r'user', views.UserViewSet)
-router.register(r'group', views.GroupViewSet)
+#router = routers.DefaultRouter()
+#router.register(r'user', views.UserViewSet)
+#router.register(r'group', views.GroupViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^', include(router.urls)),
+    url(r'^$', api_root),
     url(r'^snippets1/', include('snippet1.urls')),
     url(r'^snippets2/', include('snippet2.urls')),
     url(r'^snippets3/', include('snippet3.urls')),
-    #url(r'^snippets4/', include('snippet4.urls')),
+    url(r'^snippets4/', include('snippet4.urls')),
+    url(r'^snippets5/', include('snippet5.urls')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

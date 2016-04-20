@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'snippet2.apps.Snippet2Config',
     'snippet3.apps.Snippet3Config',
     'snippet4.apps.Snippet4Config',
+    'snippet5.apps.Snippet5Config',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -125,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
-#     'PAGE_SIZE': 10
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGE_SIZE': 10
+}
